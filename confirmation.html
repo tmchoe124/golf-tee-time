@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin: 40px;
+        }
+        .confirmation-box{
+            border: 2px solid green;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f8f8f8;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Booking Confirmed ✅</h1>
+    <div class="confirmation-box">
+        <h3>Your Booking Details</h3>
+        <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+        <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+        <p><strong>Golfers:</strong> <span id="confirm-golfers"></span></p>
+        <p><strong>Time:</strong> <span id="confirm-time"></span></p>
+        <p><strong>Price:</strong> <span id="confirm-price"></span></p>
+        <p><strong>Date:</strong> <span id="confirm-date"></span></p>
+    </div>
+    <script>
+        const booking = JSON.parse(localStorage.getItem("bookingDetails"));
+        if (booking) {
+            document.getElementById("confirm-name").textContent = booking.name;
+            document.getElementById("confirm-email").textContent = booking.email;
+            document.getElementById("confirm-golfers").textContent = booking.golfers;
+            document.getElementById("confirm-time").textContent = booking.time;
+            document.getElementById("confirm-price").textContent = booking.price;
+            document.getElementById("confirm-date").textContent = booking.date;
+        } else {
+            document.body.innerHTML = "<h1>No Booking Found.</h1>";
+        }
+    </script>
+</body>
+</html>

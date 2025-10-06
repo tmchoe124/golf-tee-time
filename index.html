@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tee Times</title>
+</head>
+
+<body>
+    </header>
+        <div class="navbar">
+            <h1>Puzzles Golf Course</h1>
+            <ul>
+                <a href="#">Tee Times</a>
+                <a href="#">Course Info</a>
+                <a href="#">Sign up/Login</a>
+            </ul>
+        </div>
+    </header>
+    <div class="layout">
+        <aside>
+            <div class="sidebar">
+                <h2>Choose By date:</h2>
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date"></input>
+                <h2> Start Time:</h2>
+                <label for="start" id="start" name="start"></label>
+                <select id="start-time">
+                    <option value="all">Any Times</option>
+                    <option value="6:00AM">6:00 AM</option>
+                    <option value="7:00AM">7:00 AM</option>
+                    <option value="8:00AM">8:00 AM</option>
+                    <option value="9:00AM">9:00 AM</option>
+                    <option value="10:00AM">10:00 AM</option>
+                    <option value="11:00AM">11:00 AM</option>
+                    <option value="12:00PM">12:00 PM</option>
+                    <option value="1:00PM">1:00 PM</option>
+                    <option value="2:00PM">2:00 PM</option>
+                    <option value="3:00PM">3:00 PM</option>
+                    <option value="4:00PM">4:00 PM</option>
+                    <option value="5:00PM">5:00 PM</option>
+                    <option value="6:00PM">6:00 PM</option>
+                </select>
+                <h2>
+                    Price: <span id="price-value">$50</span>
+                </h2>
+                <input type="range" id="price" name="price" min="0" max="100" value="50">
+                <h2>Golfers:</h2>
+                <div class="option-number">
+                    <button id="any">Any</button>
+                    <button id="1">1</button>
+                    <button id="2">2</button>
+                    <button id="3">3</button>
+                    <button id="4">4</button>
+                </div>
+            </div>
+        </aside>
+        <main class="content">
+            <div class="container">
+                <div class="box" data-time="6:00AM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">6:00 AM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="7:00AM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">7:00 AM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="8:00AM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">8:00 AM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="9:00AM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">9:00 AM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="10:00AM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">10:00 AM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="11:00AM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">11:00 AM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="12:00PM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">12:00 PM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" date-time="1:00PM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">1:00 PM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="2:00PM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">2:00 PM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="3:00PM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">3:00 PM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="4:00PM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">4:00 PM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="5:00PM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">5:00 PM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="box" data-time="6:00PM" data-golfers="1-4">
+                    <div class="box-header">
+                        <h3 class="time">6:00 PM</h3>
+                        <h3 class="number">1-4</h3>
+                        <h3 class="holes">18</h3>
+                    </div>
+                    <h2 class="course-name">Puzzles Golf Course</h2>
+                    <h2 class="list-price">$42.99</h3>
+                    <button class="book-btn">Book Now</button>
+                    <div class="booking-form hidden">
+                        <h3>Book Your Tee Time</h3>
+                        <form id="booking-form">
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Enter First and Last Name"><br><br>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <label>Number of Golfers:</label><br>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br><br>
+                            <button type="submit" id="confirm-btn">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
